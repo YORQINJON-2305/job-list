@@ -1,0 +1,192 @@
+:root {
+  --main-text-color: #5ca5a5;
+  --text-color-black: #2b3939;
+  --text-color-gray: #7c8f8f;
+  --main-bg-color: #eff7f7;
+  --main-box-shadow: 0px 15px 20px -5px #0d718226;
+}
+
+@font-face {
+  font-family: "League Spartan";
+  font-display: swap;
+  font-weight: 500;
+  src: url("../fonts/league-spartan-v5-latin-500.woff2") format("woff2"),
+    url("../fonts/league-spartan-v5-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "League Spartan";
+  font-display: swap;
+  font-weight: 700;
+  src: url("../fonts/league-spartan-v5-latin-700.woff2") format("woff2"),
+    url("../fonts/league-spartan-v5-latin-700.woff") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  font-family: "League Spartan";
+  font-weight: 500;
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+  padding: 0px 20px;
+}
+
+.job-section {
+  background-image: url("../images/main-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 156px;
+  background-color: var(--main-bg-color);
+  padding: 232px 0px 120px 0px;
+}
+
+.job-list {
+  margin: 0;
+  padding: 0px;
+}
+
+.job-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 40px 32px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: var(--main-box-shadow);
+}
+
+.active {
+  border-left: 5px solid #5ca5a5;
+}
+
+.logo {
+  margin-right: 24px;
+}
+
+.info-wrap {
+  margin-right: auto;
+}
+
+.company-name-text-wrap {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.company-name {
+  margin-right: 16px;
+  color: var(--main-text-color);
+  font-size: 14px;
+}
+
+.new {
+  margin-right: 8px;
+  padding: 6px 8px 4px 8px;
+  font-size: 11px;
+  letter-spacing: -0.0846154px;
+  color: #fff;
+  background-color: #5ca5a5;
+  border-radius: 12px;
+}
+
+.featured {
+  background-color: #2b3939;
+}
+
+.direction-name {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: var(--text-color-black);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.direction-name:hover {
+  color: var(--main-text-color);
+}
+
+.time-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.time-item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  color: var(--text-color-gray);
+  font-weight: 500;
+}
+
+.time-item:nth-child(2)::before,
+.time-item:nth-child(2)::after {
+  content: "";
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0px 16px;
+  background-image: url("../images/dot.svg");
+  background-repeat: no-repeat;
+}
+
+.set-time {
+  font-weight: 500;
+}
+
+.time-text {
+  margin: 0;
+  line-height: 24px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.know-list {
+  display: flex;
+  padding: 0;
+  align-items: center;
+  list-style: none;
+}
+
+.know-item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.btn {
+  padding: 4px 8px;
+  border: none;
+  font-size: 13px;
+  border-radius: 4px;
+  font-weight: 700;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5ca5a5;
+  color: #fff;
+}
